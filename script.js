@@ -16,6 +16,7 @@ function aaa(){
             var data = JSON.parse(myRequest.responseText);
             var k = document.getElementById('haha').setAttribute("src",data.url[count]);
         }
+
     };
         
     count+=1;
@@ -25,10 +26,10 @@ function aaa(){
     }
     console.log(count);
 
-    myRequest.open('GET', 'http://localhost:8080/Basic_Ajax/simple.json', true);
+    myRequest.open('GET', 'http://localhost:8080/MaAJAX/simple.json', true);
     myRequest.send(null);
     ccc();
-    setTimeout(bbb,2500)
+    setTimeout(bbb,2500);
 }
 
 function bbb(){
